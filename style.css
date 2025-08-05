@@ -1,0 +1,147 @@
+body {
+    background-color: #d0dcff;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#title {
+    
+    width: 800px;
+    text-align: center;
+}
+
+#ad-form {
+    text-align: center;
+    margin: 40px auto;
+    margin-top: 125px;
+    padding: 5px;
+    padding-top: 1px;
+    background-color: #7D9EFF;
+    border-radius: 10px;
+    width: 400px;
+}
+
+#adButton {
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 15px;
+    padding: 5px;
+    width: 280px;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+#adButton:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#show-more-btn {
+    cursor: pointer;
+    color: black;
+    background-color: #d0dcff;
+    border: 1px solid #d0dcff;
+    border-radius: 7px;
+}
+
+#show-more-btn:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#backToTop {
+    position: fixed;
+    right: 235px;
+    bottom: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+#backToTop:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+#stories hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 15px 0;
+}
+
+#stories {
+    padding: 20px;
+    text-align: left;
+    margin-left: 310px;
+    margin-top: 20px;
+    width: 825px;
+    background-color: #7D9EFF;
+    border-radius: 10px;
+}
+
+#story-form {
+    position: fixed;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 40px;
+    top: 50%;
+    left: 88%;
+    transform: translate(-45%, -54%);
+    background-color: #7D9EFF;
+}
+
+#main-form textarea {
+    width: 250px;
+    height: 300px;
+}
+
+#main-form input {
+    width: 250px;
+}
+
+#main-form input[type="submit"] {
+    width: 250px;
+    color: black;
+    background-color: #d0dcff;
+    border: 1px solid #d0dcff;
+    border-radius: 7px;
+}
+
+#main-form input[type="submit"]:hover {
+    width: 250px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#ad {
+    position: fixed;
+    padding: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+#ad img {
+    width: 280px;
+}

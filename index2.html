@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>StoryShare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Form-->
+    <section id="ad-form">
+        <h3>Fill out this form to submit your advertisement details</h3>
+
+        <form id="main-form" method="POST" action="ad_form.php" enctype="multipart/form-data">
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" name="name" placeholder="John Doe" /><br /><br />
+            <label for="title">Company Name:</label><br />
+            <input type="text" id="cname" name="cname" placeholder="Wentworth Institute of Technology" /><br /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder="djohn@wit.edu" /><br /><br />
+            <label for="image">Image:</label><br />
+            <input type="file" id="image" name="image" /><br /><br />
+            <label for="link">Link Image Will Follow:</label><br />
+            <input type="text" id="link" name="link" placeholder="your-website.com" /><br /><br />
+            <input type="submit" style="cursor: pointer;" />
+        </form>
+
+        <br />
+    </section>
+</body>
+</html>
