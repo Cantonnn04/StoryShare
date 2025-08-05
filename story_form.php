@@ -59,4 +59,5 @@ if (isset($_GET['action']) && $_GET['action'] == 'get_stories') {
     ]);
     exit;
 }
+
 ?>
