@@ -100,4 +100,5 @@ backToTopButton.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
+
 });
