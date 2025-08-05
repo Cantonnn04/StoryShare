@@ -6,11 +6,7 @@ h1 {
     font-size: 40px;
 }
 
-#title {
-    
-    width: 800px;
-    text-align: center;
-}
+
 
 #ad-form {
     text-align: center;
@@ -145,4 +141,5 @@ html {
 #ad img {
     width: 280px;
 }
+
 
