@@ -6,7 +6,7 @@ $database = "finalproject";
 
 // Saveing to database
 if ($_POST && !isset($_GET['action'])) {
-    $conn = new mysqli($host, $username, $password, $database); // Establishing connection
+    $conn = new mysqli($host, $username, $password, $database);
     
     // Insert into submissions table
     $conn->query("INSERT INTO submissions () VALUES ()");
@@ -20,14 +20,14 @@ if ($_POST && !isset($_GET['action'])) {
     $conn->close();
 }
 
-// Requesting stories via
+// Getting stories from database
 if (isset($_GET['action']) && $_GET['action'] == 'get_stories') {
     $conn = new mysqli($host, $username, $password, $database);
     
     $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
-    $limit = 3; // Show 3 stories at a time
+    $limit = 3; // Show 3 stories at a time as I did not want the database to be overwhelmed so I set a limit of 3 stories
     
-    // Get stories with submission time, ordered by most recent first
+    // Sorting the stories so the most recent ones are first (ORDER BY sub.submitted_at DESC)
     $query = "SELECT s.title, s.body, s.anonymous_name, sub.submitted_at 
               FROM stories s 
               JOIN submissions sub ON s.id = sub.id 
@@ -44,7 +44,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'get_stories') {
         $stories[] = $row;
     }
     
-    // Check if there are more stories
     $countQuery = "SELECT COUNT(*) as total FROM stories";
     $countResult = $conn->query($countQuery);
     $totalStories = $countResult->fetch_assoc()['total'];
@@ -59,5 +58,4 @@ if (isset($_GET['action']) && $_GET['action'] == 'get_stories') {
     ]);
     exit;
 }
-
 ?>

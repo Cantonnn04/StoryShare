@@ -23,9 +23,9 @@ h1 {
     cursor: pointer;
     position: fixed;
     left: 20px;
-    bottom: 15px;
+    bottom: 10px;
     padding: 5px;
-    width: 280px;
+    width: 270px;
     color: black;
     background-color: white;
     border: 1px solid white;
@@ -57,7 +57,7 @@ h1 {
 #backToTop {
     position: fixed;
     right: 235px;
-    bottom: 20px;
+    bottom: 10px;
     padding: 5px;
     cursor: pointer;
     color: black;
@@ -100,7 +100,7 @@ html {
     border-radius: 10px;
     padding: 20px;
     padding-bottom: 40px;
-    top: 50%;
+    top: 52%;
     left: 88%;
     transform: translate(-45%, -54%);
     background-color: #7D9EFF;
@@ -133,13 +133,12 @@ html {
 
 #ad {
     position: fixed;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
     top: 0px;
     left: 0px;
 }
 
 #ad img {
-    width: 280px;
+    width: 270px;
 }
-
-
